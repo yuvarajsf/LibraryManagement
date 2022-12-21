@@ -96,7 +96,7 @@ namespace WebApplicationFinalAssignment.Controllers
         [Route("insert")]
         public IActionResult AddBook(Books obj)
         {
-            //Do the db action
+           //Do the db action
             if (!ModelState.IsValid)
             {
                 var Obj = from e in _db.Bookcategory where e.IsDeleted == false select e;
